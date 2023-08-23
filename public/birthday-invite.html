@@ -1,0 +1,44 @@
+<!-- This is one possible solution -->
+<h1>It's My Birthday</h1>
+<h2>On the 30th September</h2>
+<img
+  <img
+  src="https://raw.githubusercontent.com/appbrewery/webdev/main/birthday-cake3.4.jpeg"
+  alt="Birthday Cake"
+  width="200"
+/>
+
+/>
+<h2>Come celebrate with me</h2>
+
+<ul>
+  <li>Dress: Semi Formal</li>
+</ul>
+<h3>This is where you need to go</h3>
+<a href="https://goo.gl/maps/8DzNwFcXNYhHLSE9A"
+  >Click here for directions to Armory National Guard Center</a
+>
+<hr />
+<h3>RSVP</h3>
+
+<form action="process_rsvp.php" method="post">
+  <label for="name">Your Name:</label>
+  <input type="text" id="name" name="name" required /><br />
+
+  <label for="email">Your Email:</label>
+  <input type="email" id="email" name="email" required /><br />
+
+  <label for="attendance">Will you attend?</label>
+  <select id="attendance" name="attendance" required>
+    <option value="yes">Yes, I'll be there!</option>
+    <option value="no">Sorry, I can't make it.</option></select
+  ><br />
+
+  <label for="guests">Number of Guests:</label>
+  <input type="number" id="guests" name="guests" min="0" /><br />
+
+  <label for="message">Message (optional):</label>
+  <textarea id="message" name="message" rows="4" cols="50"></textarea><br />
+
+  <button type="submit">Submit RSVP</button>
+</form>
